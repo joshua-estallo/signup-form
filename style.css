@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Norse; /* Choose a name for your font family */
+  src: url('fonts/Norse-Bold.otf') format('opentype');
+  /* You can provide additional formats like woff2, woff, ttf for cross-browser compatibility */
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  /* height: 100vh; */
+  display: flex;
+}
+
+aside {
+  position: relative;
+}
+
+aside img {
+  height: 100vh;
+}
+
+aside .heading {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 484px;
+  height: 120px;
+  top: 100px;
+}
+
+aside .heading img {
+  height: 100%;
+}
+
+aside .heading span {
+  font-family: Norse, sans-serif;
+  font-size: 6rem;
+}
+
+main {
+  padding: 50px;
+}
+
+main p:not(:last-child) {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+form .fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+form .fieldset > * {
+  margin-bottom: 20px;
+  flex-basis: 45%;
+}
+form .field {
+  display: flex;
+  flex-direction: column;
+}
+
+form button[type=submit] {
+  background-color: #596D48;
+  color: white;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 10px 40px;
+  outline: 2px solid red;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  outline: 1px solid blue;
+}
+
+form p:last-child {
+  outline: 1px solid red;
+  width: 100px;
+  margin: 0 auto;
+}
+
